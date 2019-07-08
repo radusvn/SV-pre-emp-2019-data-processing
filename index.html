@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Data Processing</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let users = [
+				{
+					"name": "Albert",
+					"weight": 70,
+					"gender": "m",
+					"phoneNumber": "(0020)0743123123"
+				},
+				{
+					"name": "Marta",
+					"weight": 75,
+					"gender": "f",
+					"phoneNumber": "(0021)0743123123"
+				},
+				{
+					"name": "Leon",
+					"weight": 75,
+					"gender": "m",
+					"phoneNumber": "(0022)0743123123"
+				},
+				{
+					"name": "Norbert",
+					"weight": 92,
+					"gender": "m",
+					"phoneNumber": "(0023)0743123123"
+				},
+				{
+					"name": "Tudor",
+					"weight": 68,
+					"gender": "m",
+					"phoneNumber": "(0024)0743123123"
+				},
+				{
+					"name": "Alice",
+					"weight": 70,
+					"gender": "f",
+					"phoneNumber": "(0025)0743123123"
+				}
+
+			];
+
+		// 1. Extrage toti userii a caror nume incepe cu litera "a", si returneaza-i. 
+		//    (foloseste `filter()`)
+		function filterNames() {
+			// ...
+		}
+
+		// 2. Aduna greutatea tuturor userilor a caror nume contine litera "t" si returneaza totalul. 
+		//    (foloseste `reduce()`)
+		function calculateWeight() {
+			// ...
+		}
+
+		// 3. Creeaza o noua lista care sa contina doar titlul si numele
+		//    Ex. ['Mr. Albert', 'Ms. Marta', ..]
+		//    (foloseste `map()`)
+		function extractNames() {
+			// ...
+		}
+
+		// 4. Extrage o lista doar cu numerele de telefon
+		//    (foloseste `map()`)
+		function extractPhones() {
+			// ...
+		}
+
+		// 5. Toate numerele trebuie corectate, sa contina prefixul Romaniei (0040)
+		//    - reutilizeaza `extractPhones()`
+		//    - foloseste `map()` pentru a obtine o lista noua cu numerele de telefon corecte
+		//    - inlocuieste fiecare prefix, e.g.: (0020)0743123123 sa devina (0040)0743123123
+		//    - hint: poti folosi `replace()`, dar primesti bonus daca folosesti `split()` si `splice()`
+		function extractCorrectPhones() {
+			// ...
+		}
+
+		// TESTS
+		console.log('filterNames', filterNames());
+		console.log('calculateWeight', calculateWeight());
+		console.log('extractNames', extractNames());
+		console.log('extractPhones', extractPhones());
+		console.log('extractCorrectPhones', extractCorrectPhones());
+	</script>
+</body>
+</html>
